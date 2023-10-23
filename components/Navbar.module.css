@@ -1,0 +1,118 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    gap: 12rem;
+    width: 100%;
+  }
+  
+  .navItem {
+    display: flex;
+    gap: 12rem;
+  }
+
+  .navLink {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+  }
+
+  .navLink li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navLink li a:focus {
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    color: #1A76D1;
+    font-weight: 600;
+  }
+
+  .button {
+    background-color: #1A76D1;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 12rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    animation: fadeInDown 0.5s ease forwards;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes fadeInDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  
+  @media (max-width: 768px) {
+    .logo {
+        width: 10rem;
+      }
+
+    .hamburger {
+        color: #1A76D1;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navItem {
+       display: none;        
+    }
+
+      .navbar {
+        gap: 10rem;
+      }
+
+      .mobile {
+        list-style: none;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        animation: SlideOut 0.6s ease-in-out;
+      }
+
+      @keyframes SlideOut {
+        from {
+          transform: translateY(-10%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    
+      .mobile li a {
+        text-decoration: none;
+        color: black;
+      }
+    
+      .mobile li a:focus {
+        color: #1A76D1;
+        font-weight: 600;
+      }
+     
+  }
+  
