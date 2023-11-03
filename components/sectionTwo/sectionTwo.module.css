@@ -18,31 +18,26 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 .arrow {
     display: flex;
     gap: 150px;
     padding-top: 30px;
 }
-
 .arrowSection {
     display: flex;
     gap: 20px;
     padding-top: 20px;
     cursor: pointer;
 }
-
 .arrowSection:hover {
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
-
 .caseSection {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-
 .icon {
     font-size: 60px;
 }
