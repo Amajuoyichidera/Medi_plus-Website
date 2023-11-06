@@ -1,11 +1,6 @@
 import React from 'react'
 import { FaArrowRight, FaAmbulance, FaClock, FaBook } from 'react-icons/fa';
-import emergency from '@/public/emergency.png'
-import timetable from '@/public/timeTable.png'
-import hours from '@/public/hours.png'
 import styles from '@/components/sectionTwo/sectionTwo.module.css'
-import Image from 'next/image';
-
 
 export const Case = ({ data }) => {
     return (

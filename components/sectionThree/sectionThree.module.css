@@ -1,0 +1,70 @@
+.container {
+    padding-top: 100px;
+    text-align: center;
+    color: #2C2D3F;
+}
+
+.container p {
+    color: #888897;
+}
+
+.family {
+    padding-bottom: 30px;
+}
+
+.heart {
+    font-size: 40px;
+    color: #1A76D1;
+    margin-bottom: 20px;
+}
+
+.doted {
+    border-top: 5px dotted #1A76D1;
+    width: 10%;
+    margin-top: 140px;
+}
+
+.helpContainer {
+    display: flex;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.logo {
+    font-size: 40px;
+}
+
+.logoContainer {
+    border: 2px solid #E6E6E6;
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    color: #1A76D1;
+}
+
+.logoContainer:hover {
+    background-color: #1A76D1;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
+.help {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.help h2 {
+    padding-bottom: 20px;
+}

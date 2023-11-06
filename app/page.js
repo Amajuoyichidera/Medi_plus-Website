@@ -3,6 +3,9 @@ import styles from './page.module.css'
 import Slider from '@/components/Slider/Slider';
 import { Slide1, Slide2, Slide3, } from '@/components/Slides/Slides';
 import SectionTwo from '@/components/sectionTwo/SectionTwo';
+import SectionThree from '@/components/sectionThree/SectionThree';
+import SectionFour from '@/components/sectionFour/SectionFour';
+
 
 export default function Home() {
   const sections = [
@@ -21,6 +24,8 @@ export default function Home() {
     <main className={styles.main}>
       <Slider sections={sections} />
       <SectionTwo />
+      <SectionThree />
+      <SectionFour />
     </main>
   )
 }
