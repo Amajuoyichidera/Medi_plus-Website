@@ -13,6 +13,17 @@ export const Help = ({ data }) => {
     )
 }
 
+export const Heart = ({ name1, name2 }) => {
+    return (
+        <div className={styles.heartSection}>
+        <h1>{name1}</h1>
+        <h1 className={styles.family}>{name2}</h1>
+        <FaHeartbeat className={styles.heart} />
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+        </div>
+    )
+}
+
 
 const SectionThree = () => {
     const case1Data = {
@@ -35,13 +46,7 @@ const SectionThree = () => {
 
   return (
     <div className={styles.container}>
-        <div>
-            <h1>We Are Always Ready To Help You &</h1>
-            <h1 className={styles.family}>Your Family</h1>
-            <FaHeartbeat className={styles.heart} />
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-        </div>
-
+        <Heart name1='We Are Always Ready To Help You &' name2='Your Family' />
         <div className={styles.helpContainer}>
             <Help data={case1Data} />
             <div className={styles.doted}></div>

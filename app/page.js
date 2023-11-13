@@ -5,6 +5,9 @@ import { Slide1, Slide2, Slide3, } from '@/components/Slides/Slides';
 import SectionTwo from '@/components/sectionTwo/SectionTwo';
 import SectionThree from '@/components/sectionThree/SectionThree';
 import SectionFour from '@/components/sectionFour/SectionFour';
+import SectionFive from '@/components/sectionFive/SectionFive';
+import SectionSix from '@/components/sectionSix/SectionSix';
+import SectionSeven from '@/components/sectionSeven/sectionSeven';
 
 
 export default function Home() {
@@ -26,6 +29,9 @@ export default function Home() {
       <SectionTwo />
       <SectionThree />
       <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <SectionSeven />
     </main>
   )
 }
