@@ -1,6 +1,6 @@
 import React from 'react'
 import callBg from '@/public/call-bg.jpg'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import styles from '@/components/sectionSix/sectionSix.module.css'
 
 const SectionSix = () => {

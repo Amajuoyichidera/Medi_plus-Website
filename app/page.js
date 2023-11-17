@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import styles from './page.module.css'
 import Slider from '@/components/Slider/Slider';
 import { Slide1, Slide2, Slide3, } from '@/components/Slides/Slides';

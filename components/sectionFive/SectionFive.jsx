@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heart } from '../sectionThree/SectionThree'
 import { FaRegPlayCircle, FaPlayCircle } from 'react-icons/fa'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import videoBg from '@/public/video-bg.jpg'
 import styles from '@/components/sectionFive/sectionFive.module.css'
 

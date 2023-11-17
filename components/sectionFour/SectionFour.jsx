@@ -1,6 +1,6 @@
 import { FaHome, FaUsers, FaSmile, FaFileAlt } from 'react-icons/fa';
 import styles from '@/components/sectionFour/sectionFour.module.css'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import myBg from '@/public/hand_bg.jpg'
 
 export const Rooms = ({ data }) => {

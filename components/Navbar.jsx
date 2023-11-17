@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
 import { FaBars } from 'react-icons/fa';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Logo from '@/public/logo.png'
 
 const Navbar = () => {
