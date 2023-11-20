@@ -1,0 +1,12 @@
+.slide {
+    overflow-x: hidden;
+}
+
+.slideImg {
+    padding-top: 100px;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}

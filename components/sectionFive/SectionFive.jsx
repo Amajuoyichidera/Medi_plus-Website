@@ -43,7 +43,7 @@ const SectionFive = () => {
             </div>
 
             <div className={styles.video}> 
-                <Image src={videoBg} className={styles.image} />
+                <Image src={videoBg} className={styles.image} height={400} width={600} />
                 <FaPlayCircle className={styles.overlayIcon} />
             </div>
         </div>

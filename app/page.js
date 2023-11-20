@@ -8,7 +8,7 @@ import SectionFour from '@/components/sectionFour/SectionFour';
 import SectionFive from '@/components/sectionFive/SectionFive';
 import SectionSix from '@/components/sectionSix/SectionSix';
 import SectionSeven from '@/components/sectionSeven/sectionSeven';
-
+import SectionEight from "@/components/sectionEight/SectionEight";
 
 export default function Home() {
   const sections = [
@@ -32,6 +32,7 @@ export default function Home() {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
     </main>
   )
 }

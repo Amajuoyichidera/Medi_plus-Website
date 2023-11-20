@@ -1,13 +1,15 @@
 import { Heart } from "../sectionThree/SectionThree"
-import { FaClipboardList, FaRegEye, FaEar, FaTooth, FaHeart, FaTint } from "react-icons/fa";
+import { FaClipboardList, FaRegEye, FaTooth, FaHeart  } from "react-icons/fa";
+import { GiMedicalDrip } from 'react-icons/gi';
 
 const SectionEight = () => {
   return (
     <div>
-      <FaEar />
       <FaTooth />
       <FaHeart />
-      <FaTint />
+      <GiMedicalDrip />
+      <FaClipboardList />
+      <FaRegEye />
     </div>
   )
 }
