@@ -55,10 +55,10 @@ const Navbar = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/services">Services</Link>
+            <Link href="#service">Services</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
         </ul>       
        <button className={styles.button}>Book An Appointment</button>
@@ -76,10 +76,10 @@ const Navbar = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/services">Services</Link>
+            <Link href="#services">Services</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="#contact">Contact</Link>
           </li>
        </ul> 
 

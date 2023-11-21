@@ -1,5 +1,10 @@
+"use client"
+
 import { FaHeartbeat, FaHospital, FaStethoscope, FaAmbulance } from 'react-icons/fa';
 import styles from '@/components/sectionThree/sectionThree.module.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const Help = ({ data }) => {
     return (
@@ -26,6 +31,11 @@ export const Heart = ({ name1, name2 }) => {
 
 
 const SectionThree = () => {
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+      });
+
     const case1Data = {
         'logo': <FaAmbulance className={styles.logo} />,
         'title': 'Emergency Help',
@@ -47,7 +57,7 @@ const SectionThree = () => {
   return (
     <div className={styles.container}>
         <Heart name1='We Are Always Ready To Help You &' name2='Your Family' />
-        <div className={styles.helpContainer}>
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.helpContainer}>
             <Help data={case1Data} />
             <div className={styles.doted}></div>
             <Help data={case2Data} />

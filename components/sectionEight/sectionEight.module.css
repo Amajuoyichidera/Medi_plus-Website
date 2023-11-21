@@ -1,0 +1,33 @@
+.container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container p {
+    color: #888897;
+}
+
+.icon {
+    color: #1A76D1;
+    font-size: 40px;
+}
+
+.section {
+    display: flex;
+    gap: 30px;
+}
+
+.name h1 {
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.treatmentSection {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.item {
+    padding-top: 50px;
+}

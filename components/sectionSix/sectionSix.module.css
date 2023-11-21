@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff;
-    z-index: 1; 
+    z-index: 1;
   }
 
   .centeredContent p {

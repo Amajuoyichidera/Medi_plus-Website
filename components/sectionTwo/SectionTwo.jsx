@@ -1,6 +1,12 @@
+"use client"
+
 import React from 'react'
 import { FaArrowRight, FaAmbulance, FaClock, FaBook } from 'react-icons/fa';
 import styles from '@/components/sectionTwo/sectionTwo.module.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 export const Case = ({ data }) => {
     return (
@@ -23,6 +29,11 @@ export const Case = ({ data }) => {
 
 
 const SectionTwo = () => {
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+      });
+
     const caseItem1 = {
         'title': 'Lorem Amet',
         'name': 'Emergency Cases',
@@ -45,7 +56,7 @@ const SectionTwo = () => {
     }
 
   return (
-    <div className={styles.caseSection}>
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.caseSection}>
         <Case data={caseItem1} />
         <Case data={caseItem2} />
         <Case data={caseItem3} />

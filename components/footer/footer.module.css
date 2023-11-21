@@ -1,0 +1,97 @@
+.footer {
+    background-color: #176ABC;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer p {
+    line-height: 25px;
+}
+
+.myH1 h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+.line {
+    border-top: 4px solid white;
+    width: 3rem;
+    margin-bottom: 40px;
+}
+
+.iconSection {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.time h5 {
+    width: 8rem;
+}
+
+.timeSection {
+    padding-top: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form input {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    width: 14rem;
+    height: 3rem;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.form input::placeholder {
+    color: white;
+}
+
+.form button {
+    height: 3rem;
+    background-color: white;
+    color: #176ABC;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    color: black;
+}

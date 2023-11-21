@@ -1,10 +1,10 @@
-import { Poppins } from 'next/font/google'
+import { Kanit } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 
 
-const oswald = Poppins({
-  weight: '500',
+const oswald = Kanit({
+  weight: '400',
   subsets: ['latin'],
 })
 

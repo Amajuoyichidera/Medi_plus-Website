@@ -9,6 +9,11 @@ import SectionFive from '@/components/sectionFive/SectionFive';
 import SectionSix from '@/components/sectionSix/SectionSix';
 import SectionSeven from '@/components/sectionSeven/sectionSeven';
 import SectionEight from "@/components/sectionEight/SectionEight";
+import SectionNine from "@/components/sectionNine/SectionNine";
+import SectionTen from "@/components/sectionTen/SectionTen";
+import SectionEleven from "@/components/sectionEleven/SectionEleven";
+import SectionTwelve from "@/components/sectionTwelve/SectionTwelve";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   const sections = [
@@ -33,6 +38,11 @@ export default function Home() {
       <SectionSix />
       <SectionSeven />
       <SectionEight />
+      <SectionNine />
+      <SectionTen />
+      <SectionEleven />
+      <SectionTwelve />
+      <Footer />
     </main>
   )
 }

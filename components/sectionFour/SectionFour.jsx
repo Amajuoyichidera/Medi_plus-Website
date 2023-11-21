@@ -1,11 +1,17 @@
+"use client"
+
 import { FaHome, FaUsers, FaSmile, FaFileAlt } from 'react-icons/fa';
 import styles from '@/components/sectionFour/sectionFour.module.css'
 import Image from "next/legacy/image";
 import myBg from '@/public/hand_bg.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 export const Rooms = ({ data }) => {
     return (
-        <div className={styles.room}> 
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.room}> 
             <div className={styles.logoContainer}>
                 {data.icon}
             </div>
@@ -19,6 +25,10 @@ export const Rooms = ({ data }) => {
 
 
 const SectionFour = () => {
+
+    useEffect(() => {
+        AOS.init(); // Initialize AOS
+      });
 
     const data1 = {
         'icon': <FaHome className={styles.logo} />,
