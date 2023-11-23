@@ -29,3 +29,19 @@
     background-color: #1A76D1;
     opacity: 0.8; 
   }
+
+  .slideImg {
+    width: 150px;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slideImg {
+      width: 60px;
+      height: 30px;
+    }
+
+    .background {
+      height: 150px;
+    }
+  }

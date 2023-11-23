@@ -3,21 +3,12 @@
     overflow: hidden;
   }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #1A76D1;
-    opacity: 0.8; 
-  }
-  
   .image {
     width: 100%;
     height: auto;
     display: block;
     z-index: -1; 
+    height: 600px;
   }
   
   .centeredContent {
@@ -28,6 +19,11 @@
     text-align: center;
     color: #ffffff;
     z-index: 1;
+    background-color: #1A76D1;
+    opacity: 0.8; 
+    width: 100%;
+    height: 100%;
+    padding-top: 170px;
   }
 
   .centeredContent p {
@@ -68,4 +64,24 @@
 
   .btn1:hover, .btn2:hover  {
     transform: scale(1.1);
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+    .centeredContent h1 {
+      font-size: 20px
+    }
+    
+  .image {
+    height: 500px;
+  }
+
+  .centeredContent {
+    padding-top: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
   }

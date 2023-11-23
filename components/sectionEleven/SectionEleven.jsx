@@ -33,7 +33,7 @@ const SectionEleven = () => {
         speed: 3000, // Adjust the speed of the slide transition
         autoplay: true,
         autoplaySpeed: 3000, // Adjust the speed of the automatic slide change
-        slidesToShow: 6, // Show all images at once
+        slidesToShow: 5, // Show all images at once
         slidesToScroll: 1,
         centerMode: true, // Centers the active slide
         centerPadding: '0', // Removes additional padding when using centerMode
@@ -47,9 +47,8 @@ const SectionEleven = () => {
             <Image className={style.background} src={clientBg} />
             <Slider className={style.slide} {...settings}>
              {images.map((image, index) => (
-               <div className={style.slideImg} key={index}>
-                <Image src={image} width={150}
-                  height={50}
+               <div key={index}>
+                <Image src={image} className={style.slideImg}
                   alt="Picture of the author" />
               </div>
               ))}

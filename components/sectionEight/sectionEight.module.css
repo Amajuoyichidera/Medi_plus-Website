@@ -31,3 +31,20 @@
 .item {
     padding-top: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    .treatmentSection {
+        flex-direction: column;
+        padding-left: 25px;
+        padding-top: 0px;
+    }
+
+    .section {
+        padding-top: 30px;
+    }
+
+    .container {
+        padding-top: 0;
+    }
+    
+}

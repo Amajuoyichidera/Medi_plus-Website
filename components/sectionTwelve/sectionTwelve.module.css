@@ -61,3 +61,34 @@
 .formSection form {
     padding-top: 50px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .formSection {
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 50px;   
+        justify-content: center;
+        align-items: center;     
+        /* padding-left: 25px; */
+    }
+
+    .doc {
+        height: 300px;
+        width: 90%;
+    }
+
+    .item {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .myInput, .dropdown, .text textarea {
+        width: 21rem;
+    }
+
+    .formSection form {
+        padding-top: 0px;
+    }
+}

@@ -47,3 +47,22 @@
     height: 2px;
     width: 21.9rem;
 }
+
+@media screen and (max-width: 768px) {
+    .newsContainer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    
+    .card {
+        margin-top: 20px;
+    }
+
+    .container {
+        padding-top: 50px;
+    }
+}

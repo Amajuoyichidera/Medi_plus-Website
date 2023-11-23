@@ -94,3 +94,18 @@
     transform: scale(1.1);
     background-color: #2C2D3F;
 }
+
+
+@media screen and (max-width: 768px) {
+    .plasticSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .plastic {
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+}

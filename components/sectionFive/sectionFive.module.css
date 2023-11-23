@@ -80,3 +80,16 @@
   .play {
     color: #1A76D1;
   }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      flex-direction: column;
+      padding-top: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .angle {
+      flex-direction: column;
+    }
+  }

@@ -1,5 +1,7 @@
 "use client"
 
+
+import myBlog from '@/public/blog1.jpg'
 import blog1 from '@/public/blog1.jpg'
 import blog2 from '@/public/blog2.jpg'
 import blog3 from '@/public/blog3.jpg'
@@ -13,7 +15,7 @@ import style from '@/components/sectionSeven/sectionSeven.module.css'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import { useEffect, useState } from 'react'
 
 const sectionSeven = () => {
 
@@ -26,6 +28,25 @@ const sectionSeven = () => {
         blog6,
         blog7
     ]
+
+    const [isSliderVisible, setIsSliderVisible] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSliderVisible(window.innerWidth > 768 );
+    };
+
+    // Initial check on component mount
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
     const settings = {
       dots: true,
@@ -43,15 +64,23 @@ const sectionSeven = () => {
   return (
     <div className={style.container}>
        <Heart name1='We Maintain Cleanliness Rules' name2='Inside Our Hospital' />
-       <Slider className={style.slide} {...settings}>
-        {images.map((image, index) => (
-          <div className={style.slideImg} key={index}>
-            <Image style={{ borderRadius: '20px'}} src={image} width={300}
-              height={250}
-              alt="Picture of the author" />
-          </div>
-        ))}
-      </Slider>      
+       {isSliderVisible ? (
+        <Slider className={style.slide} {...settings}>
+          {images.map((image, index) => (
+            <div className={style.slideImg} key={index}>
+              <Image
+                style={{ borderRadius: '20px' }}
+                src={image}
+                width={300}
+                height={250}
+                alt="Picture of the author"
+              />
+            </div>
+          ))}
+        </Slider>
+      ) : <div className={style.last}>
+        <Image src={myBlog} width={350} height={300} />
+      </div> }     
     </div>
   )
 }

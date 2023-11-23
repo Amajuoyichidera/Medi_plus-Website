@@ -9,8 +9,9 @@ const SectionSix = () => {
   
   return (
     <div className={styles.container}>
-      <div className={styles.overlay} />
-      <Image src={callBg} alt="Your Image" className={styles.image} />
+      <div className={styles.image}>
+      <Image src={callBg} layout='fill' alt="Your Image" />
+      </div>
       <div className={styles.centeredContent}>
         <h1>Do you need Emergency Medical</h1>
         <h1>Care? Call @ 1234 56789</h1>
