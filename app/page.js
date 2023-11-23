@@ -15,14 +15,15 @@ import Footer from "@/components/footer/Footer";
 import SectionSeven from '@/components/sectionSeven/SectionSeven';
 
 export default function Home() {
+  
   const sections = [
-    <div className="section1">
+    <div key="section1" className="section1">
       <Slide1 />
     </div>,
-    <div className="section2">
+    <div key="section2" className="section2">
       <Slide2 />
     </div>,
-    <div className="section3">
+    <div key="section3" className="section3">
       <Slide3 />
     </div>,
   ];
