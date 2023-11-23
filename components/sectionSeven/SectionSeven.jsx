@@ -17,7 +17,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useEffect, useState } from 'react'
 
-const sectionSeven = () => {
+const SectionSeven = () => {
 
     const images = [
         blog1,
@@ -66,8 +66,8 @@ const sectionSeven = () => {
        <Heart name1='We Maintain Cleanliness Rules' name2='Inside Our Hospital' />
        {isSliderVisible ? (
         <Slider className={style.slide} {...settings}>
-          {images.map((image, index) => (
-            <div className={style.slideImg} key={index}>
+          {images.map((image) => (
+            <div className={style.slideImg} key={image}>
               <Image
                 style={{ borderRadius: '20px' }}
                 src={image}
@@ -85,4 +85,4 @@ const sectionSeven = () => {
   )
 }
 
-export default sectionSeven
+export default SectionSeven

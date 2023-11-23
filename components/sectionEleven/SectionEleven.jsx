@@ -46,8 +46,8 @@ const SectionEleven = () => {
             <div className={style.overlay} />
             <Image className={style.background} src={clientBg} />
             <Slider className={style.slide} {...settings}>
-             {images.map((image, index) => (
-               <div key={index}>
+             {images.map((image) => (
+               <div key={image}>
                 <Image src={image} className={style.slideImg}
                   alt="Picture of the author" />
               </div>

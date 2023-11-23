@@ -23,7 +23,7 @@ const Slider = ({ sections }) => {
     return () => {
       clearInterval(interval);
     };
-  }, [currentSection]);
+  }, [currentSection, sections]);
 
   return (
     <div className="section-slider">

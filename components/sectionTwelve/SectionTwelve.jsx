@@ -89,7 +89,7 @@ const SectionTwelve = () => {
           </form>
 
           <div>
-            <Image className={style.doc} src={contact} />
+            <Image className={style.doc} src={contact} alt="image" />
           </div>
         </div>
     </div>
