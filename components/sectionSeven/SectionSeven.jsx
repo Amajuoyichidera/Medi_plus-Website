@@ -20,13 +20,13 @@ import { useEffect, useState } from 'react'
 const SectionSeven = () => {
 
   const images = [
-    { id: 1, src: blog1 },
-    { id: 2, src: blog2 },
-    { id: 3, src: blog3 },
-    { id: 4, src: blog4 },
-    { id: 5, src: blog5 },
-    { id: 6, src: blog6 },
-    { id: 7, src: blog7 }
+    { 'id': 1, 'src': blog1 },
+    { 'id': 2, 'src': blog2 },
+    { 'id': 3, 'src': blog3 },
+    { 'id': 4, 'src': blog4 },
+    { 'id': 5, 'src': blog5 },
+    { 'id': 6, 'src': blog6 },
+    { 'id': 7, 'src': blog7 }
   ];
 
     const [isSliderVisible, setIsSliderVisible] = useState(true);
