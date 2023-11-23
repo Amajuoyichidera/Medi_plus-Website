@@ -9,31 +9,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-export const Treatment = ({ icon, name, key }) => {
+export const Treatment = ({ data }) => {
   return (
-    <div className={style.section} key={key}>
+    <div className={style.section} key={data.id}>
        <div className={style.icon}>
-        {icon}
+        {data.icon}
        </div>
 
        <div className={style.name}>
-         <h1>{name}</h1>
+         <h1>{data.name}</h1>
          <p>Lorem ipsum dolor sit amet, <br /> consectetur adipiscing elit. Donec <br />  luctus dictum eros ut imperdiet.</p>
        </div>
     </div>
   )
 }
-
-export const TreatmentSection = ({ item }) => {
-  return (
-    <div className={style.treatmentSection}>
-    <Treatment key={item.id} icon={item.icon1} name={item.name1} />
-    <Treatment key={item.id} icon={item.icon2} name={item.name2} />
-    <Treatment key={item.id} icon={item.icon3} name={item.name3} />
-    </div>
-  )
-}
-
 
 const SectionEight = () => {
 
@@ -43,30 +32,56 @@ const SectionEight = () => {
 
   const item1 = {
     'id': 1,
-    'icon1': <FaClipboardList />,
-    'name1': 'General Treatment',
-    'icon2': <FaTooth />,
-    'name2': 'Teeth Whitening',
-    'icon3': <FaHeart />,
-    'name3': 'Heart Surgery',
+    'icon': <FaClipboardList />,
+    'name': 'General Treatment',
   }
 
   const item2 = {
     'id': 2,
-    'icon1': <IoEar />,
-    'name1': 'Ear Treatment',
-    'icon2': <FaRegEye />,
-    'name2': 'Vision Problems',
-    'icon3': <GiMedicalDrip />,
-    'name3': 'Blood Transfusion',
+    'icon': <FaTooth />,
+    'name': 'Teeth Whitening',
+  }
+
+  const item3 = {
+    'id': 3,
+    'icon': <FaHeart />,
+    'name': 'Heart Surgery',
+  }
+
+  const item4 = {
+    'id': 4,
+    'icon': <IoEar />,
+    'name': 'Ear Treatment',
+  }
+
+  const item5 = {
+    'id': 5,
+    'icon': <FaRegEye />,
+    'name': 'Vision Problems',
+  }
+
+  const item6 = {
+    'id': 6,
+    'icon': <GiMedicalDrip />,
+    'name': 'Blood Transfusion',
   }
 
   return (
     <div className={style.container} id="service">
       <Heart name1='We Offer Different Services To'  name2='Improve Your Health' />
        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={style.item}>
-       <TreatmentSection item={item1} />
-       <TreatmentSection item={item2} />
+   
+        <div className={style.treatmentSection}>
+          <Treatment data={item1} />
+          <Treatment data={item2} />
+          <Treatment data={item3} />
+       </div>   
+
+       <div className={style.treatmentSection}>
+          <Treatment data={item4} />
+          <Treatment data={item5} />
+          <Treatment data={item6} />
+       </div>
        </div>
     </div>
   )
