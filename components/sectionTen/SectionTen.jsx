@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 export const News = ({ item }) => {
     return (
-        <div className={style.card}>
+        <div key={item.id} className={style.card}>
             <Image src={item.img} height={250} width={350} alt="item image" />
             <div className={style.news}>
             <h5>{item.date}</h5>
@@ -34,6 +34,7 @@ const SectionTen = () => {
 
       
     const item1 = {
+        'id': 1,
         img: blog1,
         date: '22 Aug, 2045',
         name1: 'We have annnocuced our new',
@@ -41,6 +42,7 @@ const SectionTen = () => {
     }
 
     const item2 = {
+        'id': 2,
         img: blog2,
         date: '15 Jul, 2045',
         name1: 'Top five way for solving teeth',
@@ -48,6 +50,7 @@ const SectionTen = () => {
     }
 
     const item3 = {
+        'id': 3,
         img: blog3,
         date: '21 Jan, 2045',
         name1: 'We provide highly business',

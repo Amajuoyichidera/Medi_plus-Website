@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 export const Help = ({ data }) => {
     return (
-        <div className={styles.help}>
+        <div key={data.id} className={styles.help}>
             <div className={styles.logoContainer}>
                 {data.logo}
             </div>
@@ -37,18 +37,21 @@ const SectionThree = () => {
       });
 
     const case1Data = {
+        'id': 1,
         'logo': <FaAmbulance className={styles.logo} />,
         'title': 'Emergency Help',
         'body': 'Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.'
     }
 
     const case2Data = {
+        'id': 2,
         'logo': <FaHospital className={styles.logo} />,
         'title': 'Enriched Pharmecy',
         'body': 'Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.'
     }
 
     const case3Data = {
+        'id': 3,
         'logo': <FaStethoscope className={styles.logo} />,
         'title': 'Medical Treatment',
         'body': 'Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.'

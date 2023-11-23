@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 export const Case = ({ data }) => {
     return (
-        <div className={styles.section}>
+        <div key={data.id} className={styles.section}>
             <div className={styles.card}>
             <p>{data.title}</p>
             <h2>{data.name}</h2>
@@ -35,6 +35,7 @@ const SectionTwo = () => {
       });
 
     const caseItem1 = {
+        'id': 1,
         'title': 'Lorem Amet',
         'name': 'Emergency Cases',
         'describe': 'Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.',
@@ -42,6 +43,7 @@ const SectionTwo = () => {
     }
 
     const caseItem2 = {
+        'id': 2,
         'title': 'Fusce Porttitor',
         'name': 'Doctors Timetable',
         'describe': 'Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.',
@@ -49,6 +51,7 @@ const SectionTwo = () => {
     }
 
     const caseItem3 = {
+        'id': 3,
         'title': 'Donec luctus',
         'name': 'Opening Hours',
         'describe': 'Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.',

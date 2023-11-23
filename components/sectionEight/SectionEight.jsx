@@ -26,7 +26,7 @@ export const Treatment = ({ icon, name }) => {
 
 export const TreatmentSection = ({ item }) => {
   return (
-    <div className={style.treatmentSection}>
+    <div key={item.id} className={style.treatmentSection}>
     <Treatment icon={item.icon1} name={item.name1} />
     <Treatment icon={item.icon2} name={item.name2} />
     <Treatment icon={item.icon3} name={item.name3} />
@@ -42,6 +42,7 @@ const SectionEight = () => {
   });
 
   const item1 = {
+    'id': 1,
     icon1: <FaClipboardList />,
     name1: 'General Treatment',
     icon2: <FaTooth />,
@@ -51,6 +52,7 @@ const SectionEight = () => {
   }
 
   const item2 = {
+    'id': 2,
     icon1: <IoEar />,
     name1: 'Ear Treatment',
     icon2: <FaRegEye />,

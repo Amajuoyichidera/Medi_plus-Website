@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 export const Rooms = ({ data }) => {
     return (
-        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.room}> 
+        <div key={data.id} data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.room}> 
             <div className={styles.logoContainer}>
                 {data.icon}
             </div>
@@ -31,6 +31,7 @@ const SectionFour = () => {
       });
 
     const data1 = {
+        'id': 1,
         'icon': <FaHome className={styles.logo} />,
         'number': 3400,
         'title': 'Hospital Rooms'
@@ -38,18 +39,21 @@ const SectionFour = () => {
 
     
     const data2 = {
+        'id': 2,
         'icon': <FaUsers className={styles.logo} />,
         'number': 500,
         'title': 'Specialist Doctors'
     }
 
     const data3 = {
+        'id': 3,
         'icon': <FaSmile className={styles.logo} />,
         'number': 4000,
         'title': 'Happy Patients'
     }
 
     const data4 = {
+        'id': 4,
         'icon': <FaFileAlt className={styles.logo} />,
         'number': 30,
         'title': 'Years Of Experience'

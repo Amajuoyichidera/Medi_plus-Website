@@ -30,7 +30,7 @@ export const Times = ({ name }) => {
 
 export const Plastic = ({ item }) => {
     return (
-        <div className={style.plastic}>
+        <div key={item.id} className={style.plastic}>
             <div className={style.icon}>
                 {item.icon}
             </div>
@@ -60,18 +60,21 @@ const SectionNine = () => {
 
       
     const item1 = {
+        'id': 1,
         icon: <BsScissors />,
         name: 'Plastic Suggery',
         price: 199
     }
 
     const item2 = {
+        'id': 2,
         icon: <FaTooth />,
         name: 'Teeth Whitening',
         price: 299
     }
 
     const item3 = {
+        'id': 3,
         icon: <FaHeart />,
         name: 'Heart Suggery',
         price: 399

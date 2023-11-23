@@ -18,7 +18,7 @@ export const Input = ({ type, placeholder }) => {
 
 export const Drop = ({ item }) => {
   return (
-    <select className={style.dropdown} required>
+    <select key={item.id} className={style.dropdown} required>
       <option>{item.name1}</option>
       <option>{item.name2}</option>
       <option>{item.name3}</option>
@@ -45,6 +45,7 @@ const SectionTwelve = () => {
 
 
   const item1 = {
+    'id': 1,
     name1: 'Department',
     name2: 'Cardiac Clinic',
     name3: 'Neurology',
@@ -53,6 +54,7 @@ const SectionTwelve = () => {
   }
 
   const item2 = {
+    'id': 2,
     name1: 'Doctor',
     name2: 'Dr. Akther Hossain',
     name3: 'Dr. Dery Alex',
