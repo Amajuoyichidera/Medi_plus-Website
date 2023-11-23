@@ -19,15 +19,15 @@ import { useEffect, useState } from 'react'
 
 const SectionSeven = () => {
 
-    const images = [
-        blog1,
-        blog2,
-        blog3,
-        blog4,
-        blog5,
-        blog6,
-        blog7
-    ]
+  const images = [
+    { id: 1, src: blog1 },
+    { id: 2, src: blog2 },
+    { id: 3, src: blog3 },
+    { id: 4, src: blog4 },
+    { id: 5, src: blog5 },
+    { id: 6, src: blog6 },
+    { id: 7, src: blog7 }
+  ];
 
     const [isSliderVisible, setIsSliderVisible] = useState(true);
 
@@ -67,10 +67,10 @@ const SectionSeven = () => {
        {isSliderVisible ? (
         <Slider className={style.slide} {...settings}>
           {images.map((image) => (
-            <div className={style.slideImg} key={image}>
+            <div className={style.slideImg} key={image.id}>
               <Image
                 style={{ borderRadius: '20px' }}
-                src={image}
+                src={image.src}
                 width={300}
                 height={250}
                 alt="Picture of the author"
@@ -79,7 +79,7 @@ const SectionSeven = () => {
           ))}
         </Slider>
       ) : <div className={style.last}>
-        <Image src={myBlog} width={350} height={300} />
+        <Image src={myBlog} width={350} height={300} alt='single author' />
       </div> }     
     </div>
   )

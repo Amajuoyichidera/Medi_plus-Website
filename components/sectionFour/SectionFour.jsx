@@ -58,7 +58,7 @@ const SectionFour = () => {
   return (
     <div className={styles.container}>
         <div className={styles.image}>
-            <Image className={styles.myImg} layout='fill' objectFit='cover' src={myBg} height={350} alt="image" />
+            <Image className={styles.myImg} layout='fill' objectFit='cover' src={myBg} height={350} alt="background image" />
         </div>
         <div className={styles.roomSection}>
         <Rooms data={data1} />

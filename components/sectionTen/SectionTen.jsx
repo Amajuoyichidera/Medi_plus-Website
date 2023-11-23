@@ -14,8 +14,7 @@ import { useEffect } from 'react';
 export const News = ({ item }) => {
     return (
         <div className={style.card}>
-            <Image src={item.img} height={250} width={350} alt="image" />
-
+            <Image src={item.img} height={250} width={350} alt="item image" />
             <div className={style.news}>
             <h5>{item.date}</h5>
             <h2>{item.name1}</h2>

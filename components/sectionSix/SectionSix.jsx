@@ -10,7 +10,7 @@ const SectionSix = () => {
   return (
     <div className={styles.container}>
       <div className={styles.image}>
-      <Image src={callBg} layout='fill' alt="Your Image" />
+      <Image src={callBg} layout='fill' alt="call background Image" />
       </div>
       <div className={styles.centeredContent}>
         <h1>Do you need Emergency Medical</h1>

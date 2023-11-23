@@ -18,7 +18,7 @@ export const Slide = ({ img, title}) => {
   return (
     <div className={styles.imageContainer}>
         <div className={styles.image}>
-        <Image src={img} layout='fill' alt="image" />
+        <Image src={img} layout='fill' alt="my slider" />
         </div>
       <div data-aos-delay="8000" className={styles.overlayContent}>
         <h1  data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out" className={styles.headerOne}>We Provide <span className={styles.span}>Medical</span> Services</h1>

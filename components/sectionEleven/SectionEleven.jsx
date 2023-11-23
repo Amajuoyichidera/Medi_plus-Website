@@ -15,17 +15,18 @@ import style from './sectionEleven.module.css'
 const SectionEleven = () => {
 
     const images = [
-        client1,
-        client2,
-        client3,
-        client4,
-        client5,
-        client1,
-        client2,
-        client3,
-        client4,
-        client5,
-    ]
+        { id: 1, src: client1 },
+        { id: 2, src: client2 },
+        { id: 3, src: client3 },
+        { id: 4, src: client4 },
+        { id: 5, src: client5 },
+        { id: 6, src: client1 },
+        { id: 7, src: client2 },
+        { id: 8, src: client3 },
+        { id: 9, src: client4 },
+        { id: 10, src: client5 },
+      ];
+      
 
     const settings = {
         dots: false,
@@ -44,12 +45,12 @@ const SectionEleven = () => {
     return (
         <div className={style.container}>
             <div className={style.overlay} />
-            <Image className={style.background} src={clientBg} />
+            <Image className={style.background} src={clientBg} alt='slider background' />
             <Slider className={style.slide} {...settings}>
              {images.map((image) => (
-               <div key={image}>
-                <Image src={image} className={style.slideImg}
-                  alt="Picture of the author" />
+               <div key={image.id}>
+                <Image src={image.src} className={style.slideImg}
+                  alt="Picture slider" />
               </div>
               ))}
            </Slider> 
