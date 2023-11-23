@@ -35,26 +35,26 @@ const SectionTen = () => {
       
     const item1 = {
         'id': 1,
-        img: blog1,
-        date: '22 Aug, 2045',
-        name1: 'We have annnocuced our new',
-        name2: 'product.'
+        'img': blog1,
+        'date': '22 Aug, 2045',
+        'name1': 'We have annnocuced our new',
+        'name2': 'product.'
     }
 
     const item2 = {
         'id': 2,
-        img: blog2,
-        date: '15 Jul, 2045',
-        name1: 'Top five way for solving teeth',
-        name2: 'problems.'
+        'img': blog2,
+        'date': '15 Jul, 2045',
+        'name1': 'Top five way for solving teeth',
+        'name2': 'problems.'
     }
 
     const item3 = {
         'id': 3,
-        img: blog3,
-        date: '21 Jan, 2045',
-        name1: 'We provide highly business',
-        name2: 'solutions.'
+        'img': blog3,
+        'date': '21 Jan, 2045',
+        'name1': 'We provide highly business',
+        'name2': 'solutions.'
     }
 
   return (

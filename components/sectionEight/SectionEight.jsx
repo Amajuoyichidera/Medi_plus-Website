@@ -9,9 +9,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-export const Treatment = ({ icon, name }) => {
+export const Treatment = ({ icon, name, key }) => {
   return (
-    <div className={style.section}>
+    <div key={key} className={style.section}>
        <div className={style.icon}>
         {icon}
        </div>
@@ -26,10 +26,10 @@ export const Treatment = ({ icon, name }) => {
 
 export const TreatmentSection = ({ item }) => {
   return (
-    <div key={item.id} className={style.treatmentSection}>
-    <Treatment icon={item.icon1} name={item.name1} />
-    <Treatment icon={item.icon2} name={item.name2} />
-    <Treatment icon={item.icon3} name={item.name3} />
+    <div className={style.treatmentSection}>
+    <Treatment key={item.id} icon={item.icon1} name={item.name1} />
+    <Treatment key={item.id} icon={item.icon2} name={item.name2} />
+    <Treatment key={item.id} icon={item.icon3} name={item.name3} />
     </div>
   )
 }
@@ -43,22 +43,22 @@ const SectionEight = () => {
 
   const item1 = {
     'id': 1,
-    icon1: <FaClipboardList />,
-    name1: 'General Treatment',
-    icon2: <FaTooth />,
-    name2: 'Teeth Whitening',
-    icon3: <FaHeart />,
-    name3: 'Heart Surgery',
+    'icon1': <FaClipboardList />,
+    'name1': 'General Treatment',
+    'icon2': <FaTooth />,
+    'name2': 'Teeth Whitening',
+    'icon3': <FaHeart />,
+    'name3': 'Heart Surgery',
   }
 
   const item2 = {
     'id': 2,
-    icon1: <IoEar />,
-    name1: 'Ear Treatment',
-    icon2: <FaRegEye />,
-    name2: 'Vision Problems',
-    icon3: <GiMedicalDrip />,
-    name3: 'Blood Transfusion',
+    'icon1': <IoEar />,
+    'name1': 'Ear Treatment',
+    'icon2': <FaRegEye />,
+    'name2': 'Vision Problems',
+    'icon3': <GiMedicalDrip />,
+    'name3': 'Blood Transfusion',
   }
 
   return (

@@ -46,20 +46,20 @@ const SectionTwelve = () => {
 
   const item1 = {
     'id': 1,
-    name1: 'Department',
-    name2: 'Cardiac Clinic',
-    name3: 'Neurology',
-    name4: 'Dentistry',
-    name5: 'Gastroenterology'
+    'name1': 'Department',
+    'name2': 'Cardiac Clinic',
+    'name3': 'Neurology',
+    'name4': 'Dentistry',
+    'name5': 'Gastroenterology'
   }
 
   const item2 = {
     'id': 2,
-    name1: 'Doctor',
-    name2: 'Dr. Akther Hossain',
-    name3: 'Dr. Dery Alex',
-    name4: 'Dr David Amajuoyi',
-    name5: 'Dr. Jovis Karon'
+    'name1': 'Doctor',
+    'name2': 'Dr. Akther Hossain',
+    'name3': 'Dr. Dery Alex',
+    'name4': 'Dr David Amajuoyi',
+    'name5': 'Dr. Jovis Karon'
   }
 
   return (
