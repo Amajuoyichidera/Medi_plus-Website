@@ -30,7 +30,7 @@ export const Times = ({ name }) => {
 
 export const Plastic = ({ item }) => {
     return (
-        <div key={item.id} className={style.plastic}>
+        <div className={style.plastic} key={item.id}>
             <div className={style.icon}>
                 {item.icon}
             </div>
@@ -95,3 +95,5 @@ const SectionNine = () => {
 }
 
 export default SectionNine
+
+

@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 
 export const Help = ({ data }) => {
     return (
-        <div key={data.id} className={styles.help}>
+        <div className={styles.help}  key={data.id}>
             <div className={styles.logoContainer}>
                 {data.logo}
             </div>
@@ -20,7 +20,7 @@ export const Help = ({ data }) => {
 
 export const Heart = ({ name1, name2 }) => {
     return (
-        <div className={styles.heartSection}>
+        <div key={name1} className={styles.heartSection}>
         <h1>{name1}</h1>
         <h1 className={styles.family}>{name2}</h1>
         <FaHeartbeat className={styles.heart} />
@@ -72,3 +72,6 @@ const SectionThree = () => {
 }
 
 export default SectionThree
+
+
+

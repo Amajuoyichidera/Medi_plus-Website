@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 export const Case = ({ data }) => {
     return (
-        <div key={data.id} className={styles.section}>
+        <div className={styles.section}  key={data.id} >
             <div className={styles.card}>
             <p>{data.title}</p>
             <h2>{data.name}</h2>
@@ -68,3 +68,6 @@ const SectionTwo = () => {
 }
 
 export default SectionTwo
+
+
+

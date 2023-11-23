@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 export const News = ({ item }) => {
     return (
-        <div key={item.id} className={style.card}>
+        <div className={style.card} key={item.id}>
             <Image src={item.img} height={250} width={350} alt="item image" />
             <div className={style.news}>
             <h5>{item.date}</h5>
@@ -71,3 +71,4 @@ const SectionTen = () => {
 }
 
 export default SectionTen
+

@@ -18,7 +18,7 @@ export const Input = ({ type, placeholder }) => {
 
 export const Drop = ({ item }) => {
   return (
-    <select key={item.id} className={style.dropdown} required>
+    <select className={style.dropdown} required  key={item.id}>
       <option>{item.name1}</option>
       <option>{item.name2}</option>
       <option>{item.name3}</option>
@@ -99,3 +99,4 @@ const SectionTwelve = () => {
 }
 
 export default SectionTwelve
+

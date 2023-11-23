@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 export const Rooms = ({ data }) => {
     return (
-        <div key={data.id} data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.room}> 
+        <div data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-out" className={styles.room} key={data.id}> 
             <div className={styles.logoContainer}>
                 {data.icon}
             </div>
@@ -75,3 +75,4 @@ const SectionFour = () => {
 }
 
 export default SectionFour
+

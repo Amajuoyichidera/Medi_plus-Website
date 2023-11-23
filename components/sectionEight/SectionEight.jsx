@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 export const Treatment = ({ icon, name, key }) => {
   return (
-    <div key={key} className={style.section}>
+    <div className={style.section} key={key}>
        <div className={style.icon}>
         {icon}
        </div>
@@ -73,3 +73,5 @@ const SectionEight = () => {
 }
 
 export default SectionEight
+
+
