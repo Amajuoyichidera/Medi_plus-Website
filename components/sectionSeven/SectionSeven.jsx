@@ -85,6 +85,4 @@ const SectionSeven = () => {
   )
 }
 
-export default SectionSeven
-
-
+export default SectionSeven;

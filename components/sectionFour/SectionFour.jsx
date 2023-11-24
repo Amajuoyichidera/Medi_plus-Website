@@ -23,7 +23,6 @@ export const Rooms = ({ data }) => {
     )
 }
 
-
 const SectionFour = () => {
 
     useEffect(() => {
@@ -74,5 +73,4 @@ const SectionFour = () => {
   )
 }
 
-export default SectionFour
-
+export default SectionFour;

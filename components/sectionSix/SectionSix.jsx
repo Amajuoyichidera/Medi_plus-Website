@@ -3,8 +3,6 @@ import callBg from '@/public/call-bg.jpg'
 import Image from "next/legacy/image"
 import styles from '@/components/sectionSix/sectionSix.module.css'
 
-
-
 const SectionSix = () => {
   
   return (
@@ -25,4 +23,4 @@ const SectionSix = () => {
   )
 }
 
-export default SectionSix
+export default SectionSix;

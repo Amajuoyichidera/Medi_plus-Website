@@ -15,7 +15,6 @@ import Footer from "@/components/footer/Footer";
 import SectionSeven from '@/components/sectionSeven/SectionSeven';
 
 export default function Home() {
-  
   const sections = [
     <div key="section1" className="section1">
       <Slide1 />

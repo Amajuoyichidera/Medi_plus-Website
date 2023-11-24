@@ -36,7 +36,6 @@ export const Item = ({ children }) => {
   )
 }
 
-
 const SectionTwelve = () => {
 
   useEffect(() => {
@@ -98,5 +97,4 @@ const SectionTwelve = () => {
   )
 }
 
-export default SectionTwelve
-
+export default SectionTwelve;

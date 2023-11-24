@@ -26,7 +26,6 @@ export const News = ({ item }) => {
     )
 }
 
-
 const SectionTen = () => {
     useEffect(() => {
         AOS.init(); // Initialize AOS
@@ -70,5 +69,4 @@ const SectionTen = () => {
   )
 }
 
-export default SectionTen
-
+export default SectionTen;

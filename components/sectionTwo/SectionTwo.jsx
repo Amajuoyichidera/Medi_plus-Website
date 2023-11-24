@@ -27,7 +27,6 @@ export const Case = ({ data }) => {
     )
 }
 
-
 const SectionTwo = () => {
 
     useEffect(() => {
@@ -67,7 +66,4 @@ const SectionTwo = () => {
   )
 }
 
-export default SectionTwo
-
-
-
+export default SectionTwo;

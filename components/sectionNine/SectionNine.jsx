@@ -94,6 +94,4 @@ const SectionNine = () => {
   )
 }
 
-export default SectionNine
-
-
+export default SectionNine;

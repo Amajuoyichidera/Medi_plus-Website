@@ -71,7 +71,4 @@ const SectionThree = () => {
   )
 }
 
-export default SectionThree
-
-
-
+export default SectionThree;
